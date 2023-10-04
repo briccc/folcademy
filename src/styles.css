@@ -1,1 +1,189 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-color {
+    background: rgb(7, 10, 78);
+    background: linear-gradient(90deg, rgba(7, 10, 78, 1) 24%, rgba(3, 1, 33, 1) 74%);
+  
+  }
+
+  .navbar {
+    border: 2px solid #20223f77 !important;
+  }
+  
+  .container {
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .navbar-menu {
+
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-top: 8px;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .dropdown-item {
+    margin-bottom: 5px;
+  }
+  
+  .dropdown-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+  
+ 
+  .title {
+    color: rgb(250, 243, 235);
+    margin-top: 50px;
+    font-size: xx-large;
+    text-align: start;
+  }
+  
+  .text {
+    color: rgb(250, 243, 235);
+    font-weight: lighter;
+  
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .search-container {
+    text-align: center;
+    
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #eee5e54f;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #a7a4a400;
+  }
+  
+  
+  .search-container :hover {
+    background-color: #e4e0e01c;
+  }
+  
+  .card{
+    border: 1px solid #4e4c4c6c !important;
+    background-color: #2a2f4641 !important;
+  }
+  
+  .card-fixed-size {
+    width: 250px;
+    min-height: 370px;
+  }
+  
+  .card-img-fixed-size {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    margin-top: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 15px;
+    object-fit: cover;
+  }
+  
+  .tabs-container {
+    background: #eeeeee00;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    height: 55px;
+    border-bottom: 1px solid #252344;
+    width: 100%;
+    color: #fff;
+  }
+  
+  .tabs-container li{
+    font-size: x-large;
+  }
+  
+  .tabs-container .tab-link {
+    width: 33.33%;
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    float: left;
+    text-align: center;
+  }
+  
+  
+  .tab-link::after {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 0;
+    display: block;
+    content: '';
+    border-bottom: 3px solid #4528af;
+    color: #3843a7;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .tab-link:hover:after {
+    transform: scaleX(1);
+  }
+  
+  .active::after {
+    transform: scaleX(1);
+  }
+  
+  .active {
+    color: #523686 !important;
+  }
+  
+  .footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #333;
+    border: 2px solid #20223f77;
+  }
+  
+  .footer p {
+    margin: 25px;
+  
+  }
+  

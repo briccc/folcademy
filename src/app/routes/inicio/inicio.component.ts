@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
-
+  activeTab : string = 'Todos';
+  onTabClick(filtro: string) {
+    this.activeTab = filtro;
+  }
 }
