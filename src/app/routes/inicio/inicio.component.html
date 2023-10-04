@@ -1,1 +1,100 @@
-<p>inicio works!</p>
+
+<div class="container content">
+
+
+
+
+    <ul class="tabs-container mt-5">
+      <li (click)="onTabClick('Todos')" [class.active]="activeTab == 'Todos'" class="tab-link">Todos</li>
+      <li (click)="onTabClick('Peliculas')" [class.active]="activeTab == 'Peliculas'" class="tab-link">Películas</li>
+      <li (click)="onTabClick('Series')" [class.active]="activeTab == 'Series'" class="tab-link">Series</li>
+    </ul>
+    <div *ngIf="activeTab == 'Todos'" class="w-100">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card card-fixed-size">
+              <div class="card-body">
+                <img src="../assets/images/annabelle.jpg" alt="Annabelle" class="card-img-fixed-size">
+                <h5 class="card-title">Annabelle</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card card-fixed-size">
+              <div class="card-body">
+                <img src="../assets/images/oppenheimer.jpg" alt="Oppenheimer" class="card-img-fixed-size">
+                <h5 class="card-title">Oppenheimer</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card card-fixed-size">
+              <div class="card-body">
+                <img src="../assets/images/ratatouille.jpg" alt="Ratatouille" class="card-img-fixed-size">
+                <h5 class="card-title">Ratatouille</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card card-fixed-size">
+              <div class="card-body">
+                <img src="../assets/images/joker.jpeg" alt="El joker" class="card-img-fixed-size">
+                <h5 class="card-title">El joker</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card card-fixed-size">
+              <div class="card-body">
+                <img src="../assets/images/cisnenegro.jpg" alt="Cisne Negro" class="card-img-fixed-size">
+                <h5 class="card-title">Cisne Negro</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card card-fixed-size">
+              <div class="card-body">
+                <img src="../assets/images/sonrie.jpg" alt="Smile" class="card-img-fixed-size">
+                <h5 class="card-title">Smile</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card card-fixed-size">
+              <div class="card-body">
+                <img src="../assets/images/spidermanatsv.jpg" alt="Spiderman a través del spiderverse"
+                  class="card-img-fixed-size">
+                <h5 class="card-title">Spiderman across the Spiderverse</h5>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card card-fixed-size">
+              <div class="card-body">
+                <img src="../assets/images/minions.jpeg" alt="Minions" class="card-img-fixed-size">
+                <h5 class="card-title">Minions</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div *ngIf="activeTab == 'Peliculas'" class="w-100">
+      <p class="title">En construcción</p>
+    </div>
+    <div *ngIf="activeTab == 'Series'" class="w-100">
+      <p class="title">Be patient pls</p>
+    </div>
+  
+  
+  
+  </div>
