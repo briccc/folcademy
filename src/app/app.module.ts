@@ -9,6 +9,7 @@ import { InicioComponent } from './routes/inicio/inicio.component';
 import { PelisComponent } from './routes/pelis/pelis.component';
 import { SeriesComponent } from './routes/series/series.component';
 import { IngresarComponent } from './routes/ingresar/ingresar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { IngresarComponent } from './routes/ingresar/ingresar.component';
     SeriesComponent,
     IngresarComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes), LayoutModule], 
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes), LayoutModule, FormsModule], 
   providers: [],
   bootstrap: [AppComponent],
 })

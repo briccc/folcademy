@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./pelis.component.css']
 })
 export class PelisComponent {
-  
+  title: string = 'Películas';
 
   movies: any[] = [
 
@@ -75,4 +75,25 @@ export class PelisComponent {
       category: 'pelicula',
     },
   ];
+
+  originalMovies: any[] = [...this.movies];
+
+  busqueda: string = '';
+
+  buscar() {
+    console.log('Búsqueda realizada:', this.busqueda);
+
+    if (this.busqueda.trim() === '') {
+      // Si no se ha ingresado ningún término de búsqueda, restaura la lista completa
+      this.movies = [...this.originalMovies];
+      return;
+    }
+
+    // Filtrar la lista de películas y series según el término de búsqueda
+    this.movies = this.originalMovies.filter(item => {
+      const busquedaMin = this.busqueda.toLowerCase();
+      const tituloMin = item.title.toLowerCase();
+      return tituloMin.includes(busquedaMin);
+    });
+  }
 }

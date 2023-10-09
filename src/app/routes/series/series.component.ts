@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./series.component.css']
 })
 export class SeriesComponent {
-  
+  title: string = 'Series';
+
   series: any[] = [
 
     {
@@ -74,4 +75,24 @@ export class SeriesComponent {
       category: 'serie',
     }
   ];
+
+  originalSeries: any[] = [...this.series];
+
+  busqueda: string = '';
+
+  buscar() {
+    console.log('Búsqueda realizada:', this.busqueda);
+
+    if (this.busqueda.trim() === '') {
+
+      this.series = [...this.originalSeries];
+      return;
+    }
+
+    this.series = this.originalSeries.filter(item => {
+      const busquedaMin = this.busqueda.toLowerCase();
+      const tituloMin = item.title.toLowerCase();
+      return tituloMin.includes(busquedaMin);
+    });
+  }
 }
