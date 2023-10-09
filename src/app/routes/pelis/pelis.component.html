@@ -1,3 +1,14 @@
-<div class="container">
-    <p class="title">pelis works!</p>
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4" *ngFor="let movie of movies">
+        <div class="card card-fixed-size">
+          <div class="card-body">
+            <img [src]="movie.image" [alt]="movie.title" class="card-img-fixed-size">
+            <h5 class="card-title">{{ movie.title }}</h5>
+            <p> {{movie.description}} </p>
+            <p class="card-title"> {{movie.rating}} </p>
+          </div> 
+        </div>
+    </div>
+  </div>
 </div>
