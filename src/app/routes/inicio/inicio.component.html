@@ -1,3 +1,13 @@
+<div class="container">
+  <h1 class="title">{{title}}</h1>
+  <p class="text">Plataforma para ver películas y series</p>
+
+
+  <div class="search-container mt-4">
+    <input type="text" class="form-control" [(ngModel)]="busqueda" (input)="buscar()" placeholder="Buscar películas y series" aria-label="Buscar" aria-describedby="basic-addon2">
+  </div>
+
+</div>
 
   <ul class="tabs-container mt-5">
     <li (click)="onTabClick('Todos')" [class.active]="activeTab == 'Todos'" class="tab-link">Todos</li>
