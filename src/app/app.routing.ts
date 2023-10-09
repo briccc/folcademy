@@ -7,7 +7,7 @@ import { IngresarComponent } from './routes/ingresar/ingresar.component';
 
 export const appRoutes: Routes = [
   { path: '', component: InicioComponent },
-  { path: 'pelis', component: PelisComponent },
+  { path: 'peliculas', component: PelisComponent },
   { path: 'series', component: SeriesComponent },
   { path: 'ingresar', component: IngresarComponent },
   { path: '**', redirectTo: '' },

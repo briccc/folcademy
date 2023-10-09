@@ -119,9 +119,14 @@
   .card-title {
     margin-top: 20px;
     text-align: center;
-    color: whitesmoke;
+    color: whitesmoke !important;
     font-size: 15px;
     object-fit: cover;
+  }
+
+  .card p{
+    color: rgb(150, 147, 147);
+    text-align: center;
   }
   
   .tabs-container {

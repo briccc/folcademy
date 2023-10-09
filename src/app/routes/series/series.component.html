@@ -1,5 +1,15 @@
 
-<div class="container">
-    <p class="title">series works!</p>
-
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4" *ngFor="let serie of series">
+        <div class="card card-fixed-size">
+          <div class="card-body">
+            <img [src]="serie.image" [alt]="serie.title" class="card-img-fixed-size">
+            <h5 class="card-title">{{ serie.title }}</h5>
+            <p> {{serie.description}} </p>
+            <p class="card-title"> {{serie.rating}} </p>
+          </div> 
+        </div>
+    </div>
+  </div>
 </div>
