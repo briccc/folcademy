@@ -3,6 +3,73 @@
   <p class="text">Plataforma para ver películas y series</p>
 
 
+  <!-- <div class="search-container mt-4">
+    <input type="text" class="form-control" [(ngModel)]="busqueda" (input)="buscar()"
+      placeholder="Buscar películas y series" aria-label="Buscar" aria-describedby="basic-addon2">
+  </div> -->
+
+
+
+  <ul class="tabs-container mt-5">
+    <li (click)="onTabClick('Todos')" [class.active]="activeTab == 'Todos'" class="tab-link">Todos</li>
+    <li (click)="onTabClick('Peliculas')" [class.active]="activeTab == 'Peliculas'" class="tab-link">Películas</li>
+    <li (click)="onTabClick('Series')" [class.active]="activeTab == 'Series'" class="tab-link">Series</li>
+  </ul>
+
+  <div *ngIf="activeTab == 'Todos'" class="w-100">
+
+
+    <div class="row ">
+      <div class="col-md-3 col-sm-6 mt-4" *ngFor="let movie of trendingMovies">
+        <div class="card card-fixed-size">
+          <div class="card-body">
+            <app-card [movie]="movie"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div *ngIf="activeTab == 'Peliculas'" class="w-100">
+    <div class="row">
+      <ng-container *ngFor="let movie of trendingMovies">
+        <div *ngIf="movie.media_type == 'movie'" class="col-md-3 col-sm-6 mt-4">
+          <div class="card card-fixed-size">
+            <div class="card-body">
+              <app-card [movie]="movie"></app-card>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  
+
+  <div *ngIf="activeTab == 'Series'" class="w-100">
+    <div class="row">
+      <ng-container *ngFor="let movie of trendingMovies">
+        <div *ngIf="movie.media_type == 'tv'" class="col-md-3 col-sm-6 mt-4">
+          <div class="card card-fixed-size">
+            <div class="card-body">
+              <app-card [movie]="movie"></app-card>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>  
+</div>
+
+
+
+
+
+<!-- <div class="container">
+  <h1 class="title">{{title}}</h1>
+  <p class="text">Plataforma para ver películas y series</p>
+
+
   <div class="search-container mt-4">
     <input type="text" class="form-control" [(ngModel)]="busqueda" (input)="buscar()" placeholder="Buscar películas y series" aria-label="Buscar" aria-describedby="basic-addon2">
   </div>
@@ -66,5 +133,4 @@
         </div>
       </div>
     </div>
-  </div>
-
+  </div> -->
