@@ -1,6 +1,5 @@
 
             <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" [alt]="movie.title" class="card-img-fixed-size" height="100" weight="100">
             <h5 class="card-title">{{ movie.title }} {{ movie.name }}</h5>
-            <p> {{movie.overview}} </p>
-            <p class="card-title"> {{movie
-                .vote_average}} </p>
+            <p class="card-title"> <i class="fa-duotone fa fa-star fa-2xs"> </i> {{movie
+                .vote_average}}</p>
