@@ -23,8 +23,19 @@
 
 .bg-custom{
     border-radius: 6px;
-    padding: 8px;
+    padding: 15px 10px;
     border: 1px solid var(--grey-700, #323B54);
-    background: var(--black-10, rgba(0, 0, 0, 0.10));
+    background: transparent;
     color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.link-register{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.link-register:hover{
+    text-decoration: underline;
 }

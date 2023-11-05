@@ -11,13 +11,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
+import { LoginComponent } from './auth/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     PelisComponent,
     SeriesComponent,
-
 
   ],
   imports: [BrowserModule, 
