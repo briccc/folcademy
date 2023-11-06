@@ -30,6 +30,15 @@ export class MovieDBService {
     });
   }
 
+  searchMovies(query: string) {
+    return this._https.get(`${this.api_url}search/movie`, {
+      params: {
+        api_key: this.key,
+        query: query
+      }
+    });
+  }
+
   getSeries() {
     return this._https.get(this.api_url + '/tv/popular', {
       headers: {

@@ -8,6 +8,7 @@ import { MovieDBService } from 'src/app/services/movieDB/movie-db.service';
 })
 export class InicioComponent implements OnInit{
   title: string = 'PelisUp!';
+  
 
   activeTab: string = 'Todos';
   onTabClick(filtro: string) {
@@ -32,6 +33,8 @@ export class InicioComponent implements OnInit{
     });
   }
 
+  
+  
   
 
   

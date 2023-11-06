@@ -39,3 +39,7 @@
 .link-register:hover{
     text-decoration: underline;
 }
+
+button:disabled{
+    background-color: gray;
+}
