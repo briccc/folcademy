@@ -4,14 +4,10 @@
   <p class="text">Las mejores series</p>
 
 
-  <!-- <div class="search-container mt-4">
-    <input type="text" class="form-control" [(ngModel)]="busqueda" (input)="buscar()" placeholder="Buscar series" aria-label="Buscar" aria-describedby="basic-addon2">
-  </div> -->
-
   <div *ngIf="activeTab == 'Series'" class="w-100">
 
     <div class="row">
-      <div class="col-md-3 col-sm-6 mt-4" *ngFor="let movie of series">
+      <div class="col-md-4 col-sm-6 mt-4" *ngFor="let movie of series">
         <div class="card card-fixed-size">
           <div class="card-body">
             <app-card [movie]="movie" ></app-card>
