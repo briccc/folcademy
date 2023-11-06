@@ -32,6 +32,7 @@ export class InicioComponent implements OnInit{
       complete: () => {console.log('Completado')},
     });
   }
+  
 
   
   

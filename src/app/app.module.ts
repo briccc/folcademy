@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     SharedModule,  
     AuthModule,
     BsDropdownModule.forRoot(), 
+    FormsModule
   ], 
   providers: [],
   bootstrap: [AppComponent],

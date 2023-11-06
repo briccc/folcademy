@@ -37,30 +37,6 @@
     color: #fff !important;
     text-decoration: none;
   }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    padding: 10px;
-    z-index: 1;
-  }
-  
-  .dropdown-item {
-    margin-bottom: 5px;
-  }
-  
-  .dropdown-item a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .dropdown-menu.show {
-    display: block;
-  }
-  
  
   .title {
     color: rgb(250, 243, 235);
@@ -115,16 +91,14 @@
   }
   
   .card-fixed-size {
-    width: 270px;
-    height: 480px;
-    overflow: hidden;
-    margin: 10px;
+    max-height: fit-content;
+
   }
   
   .card-img-fixed-size {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
+    height: 100%;
+
   }
   
   .card-title {

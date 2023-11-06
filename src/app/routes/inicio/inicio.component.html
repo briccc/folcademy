@@ -3,13 +3,6 @@
   <p class="text">Plataforma para ver películas y series</p>
 
 
-  <!-- <div class="search-container mt-3">
-    <input type="text" [(ngModel)]="busqueda" placeholder="Buscar películas y series">
-    <button (click)="buscar()" class="btn btn-primary">Buscar</button>
-  </div> -->
-
-
-
   <ul class="tabs-container mt-5">
     <li (click)="onTabClick('Todos')" [class.active]="activeTab == 'Todos'" class="tab-link">Todos</li>
     <li (click)="onTabClick('Peliculas')" [class.active]="activeTab == 'Peliculas'" class="tab-link">Películas</li>
@@ -19,8 +12,8 @@
   <div *ngIf="activeTab == 'Todos'" class="w-100">
 
 
-    <div class="row ">
-      <div class="col-md-3 col-sm-6 mt-4" *ngFor="let movie of trendingMovies">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 mt-4" *ngFor="let movie of trendingMovies">
         <div class="card card-fixed-size">
           <div class="card-body">
             <app-card [movie]="movie"></app-card>
@@ -34,7 +27,7 @@
   <div *ngIf="activeTab == 'Peliculas'" class="w-100">
     <div class="row">
       <ng-container *ngFor="let movie of trendingMovies">
-        <div *ngIf="movie.media_type == 'movie'" class="col-md-3 col-sm-6 mt-4">
+        <div *ngIf="movie.media_type == 'movie'" class="col-md-4 col-sm-6 mt-4">
           <div class="card card-fixed-size">
             <div class="card-body">
               <app-card [movie]="movie"></app-card>
@@ -49,7 +42,7 @@
   <div *ngIf="activeTab == 'Series'" class="w-100">
     <div class="row">
       <ng-container *ngFor="let movie of trendingMovies">
-        <div *ngIf="movie.media_type == 'tv'" class="col-md-3 col-sm-6 mt-4">
+        <div *ngIf="movie.media_type == 'tv'" class="col-md-4 col-sm-6 mt-4">
           <div class="card card-fixed-size">
             <div class="card-body">
               <app-card [movie]="movie"></app-card>
